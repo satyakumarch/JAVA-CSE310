@@ -98,7 +98,7 @@
 //     }
 // }
 
-//public class operator {
+// public class operator {
 
 //     public static void main(String[] args) {
 //         int x,y=10;
@@ -113,17 +113,31 @@
 //     }
 // }
 
-public class operator {
+// public class operator {
+
+//     public static void main(String[] args) {
+//         int x=10;
+//         int y=-x;
+//         int z=x++;
+//         int k=++x;
+//     System.out.println(x);
+//     System.out.println(y);
+//     System.out.println(z);
+//     System.out.println(k);
+
+// }
+// }
+
+
+public  class operator {
 
     public static void main(String[] args) {
-        int x=10;
-        int y=-x;
-        int z=x++;
-        int k=++x;
-    System.out.println(x);
-    System.out.println(y);
-    System.out.println(z);
-    System.out.println(k);
+        int p=9,q=10;
+        System.out.println(p|q);
+        System.out.println(p&q);
+        System.out.println(p^q);
+        System.out.println(p<<1);
+        System.out.println(p<<2);
 
-}
+    }
 }

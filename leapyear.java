@@ -14,7 +14,8 @@
 public class leapyear {
     public static void main(String[] args) {
         long x=123;
-        int y=x;
+        int y=(int)x;
+        long z= y;
         System.out.println(y);
     }
 }
