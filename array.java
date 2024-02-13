@@ -51,4 +51,101 @@ import java.util.Scanner;
 //     System.out.println(i);
 // }
     
+// // }
+// public class array {
+
+//     public static void main(String[] args) {
+//         int marks[]={12,23,34};
+//         //  int marks[]=new int[3];
+//         //  marks[0]=12;
+//         //  marks[1]=23;
+//         //  marks[2]=34;
+
+
+//         for(int i=0;i<3;i++){
+//             System.out.println(marks[i]);
+//         }
+//     }
 // }
+
+
+// public class array {
+
+//     public static void main(String[] args) {
+//         System.out.println("Enter the number of the element:");
+//         Scanner sc=new Scanner(System.in);
+//         int size=sc.nextInt();
+//         int number[]=new int[size];
+//         System.out.println("The given array of the element is:");
+//         for(int i=0;i<size;i++){
+           
+//             System.out.println(i);
+//         }
+
+//     }
+// }
+
+
+// public class array {
+
+//     public static void main(String[] args) {
+//         System.out.println("Enter the number of the element:");
+//         Scanner sc=new Scanner(System.in);
+//         int size=sc.nextInt();
+//         int number[]=new int[size];
+
+//         //input 
+//         for(int i=0;i<size;i++){
+//             number[i]=sc.nextInt();
+//         }
+//          System.out.println("The given array of the element is:");
+//         for(int i=0;i<size;i++){
+           
+//             System.out.println(number[i]);
+//         }
+
+//     }
+// }
+
+// public class array {
+
+//     public static void main(String[] args) {
+//         Scanner sc=new Scanner(System.in);
+//         int size=sc.nextInt();
+//         int number[]=new int[size];
+//         for(int i=0;i<size;i++){
+//             number[i]=sc.nextInt();
+//         }
+//             for(int i=0;i<size;i++){
+//                 System.out.println(number[i]);
+//         }
+//     }
+// }
+
+
+
+
+public class array {
+    public static void checkPrimeOrNot(int number) {
+        int m = number / 2;
+        int flag = 0;
+
+        if (number == 0 || number == 1) {
+            System.out.println(number + " is not a prime number");
+        } else {
+            for (int i = 2; i <= m; i++) {
+                if (number % i == 0) {
+                    System.out.println(number + " is not a prime number");
+                    flag = 1;
+                    break;
+                }
+            }
+            if (flag == 0) {
+                System.out.println(number + " is a prime number");
+            }
+        }
+    }
+}
+
+    
+   

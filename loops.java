@@ -40,15 +40,52 @@
 //     }
 // }
 
-import java.util.*;
-public class loops {
+// import java.util.*;
+// public class loops {
 
-    public static void main(String[] args) {
-        Scanner sc=new  Scanner(System.in);
-        int n=sc.nextInt();
+//     public static void main(String[] args) {
+//         Scanner sc=new  Scanner(System.in);
+//         int n=sc.nextInt();
         
-        for(int i=1;i<11;i++){
-            System.out.println(i*n);
+//         for(int i=1;i<11;i++){
+//             System.out.println(i*n);
+//         }
+//     }
+// }
+
+// import java.util.Scanner;
+
+// public class loops {
+// public static void main(String[] args) {
+//     // Scanner sc=new Scanner(System.in);
+//     // int n=sc.nextInt();
+//     for(int i=1;i<=5;i++){
+//         for(int j=1;j<i;j++){
+// // System.out.println(i+""+j);
+// System.out.println("*");
+//         }
+//     }
+// }
+// }
+
+public class loops {
+    public static void checkPrimeOrNot(int number) {
+        int m = number / 2;
+        int flag = 0;
+
+        if (number == 0 || number == 1) {
+            System.out.println(number + " is not a prime number");
+        } else {
+            for (int i = 2; i <= m; i++) {
+                if (number % i == 0) {
+                    System.out.println(number + " is not a prime number");
+                    flag = 1;
+                    break;
+                }
+            }
+            if (flag == 0) {
+                System.out.println(number + " is a prime number");
+            }
         }
     }
 }
