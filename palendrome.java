@@ -1,8 +1,8 @@
-import java.util.Scanner;
+
 
 public class palendrome {
     public static void main(String[] args) {
-        System.out.println("---------------Palindrone number--------------\n");
+        System.out.println("---------------Palindrome number--------------\n");
         int r,sum=0,temp;
         int n=345;
         
@@ -13,9 +13,9 @@ public class palendrome {
             n=n/10;
         }
         if(temp==sum)
-        System.out.println("Palindrone number");
+        System.out.println("Palindrome number");
     else
-        System.out.println("Not palindrone number");
+        System.out.println("Not palindrome number");
     }
 
     

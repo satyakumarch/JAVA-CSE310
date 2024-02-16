@@ -27,24 +27,25 @@ import java.util.*;
 
 public class input{
     public static void main(String[] args){
-        Scanner sc=new Scanner(System.in);
-        System.out.print("Enter the value of a:");
-        int a=sc.nextInt();
-        System.out.print("Enter the value of b:");
-        int b=sc.nextInt();
-        int sum=a+b;
-        int sub=a-b;
-        int mux=a*b;
-        int div=a/b;
-       
-        System.out.print("The sum of two variable a and b is:");
-        System.out.println(sum);
-        System.out.print("The sub of two variable a and b is:");
-        System.out.println(sub);
-        System.out.print("The mux of two variable a and b is:");
-        System.out.println(mux);
-        System.out.print("The div of two variable a and b is:");
-        System.out.println(div);
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.print("Enter the value of a:");
+            int a=sc.nextInt();
+            System.out.print("Enter the value of b:");
+            int b=sc.nextInt();
+            int sum=a+b;
+            int sub=a-b;
+            int mux=a*b;
+            int div=a/b;
+      
+            System.out.print("The sum of two variable a and b is:");
+            System.out.println(sum);
+            System.out.print("The sub of two variable a and b is:");
+            System.out.println(sub);
+            System.out.print("The mux of two variable a and b is:");
+            System.out.println(mux);
+            System.out.print("The div of two variable a and b is:");
+            System.out.println(div);
+        }
 }
 }
 // output

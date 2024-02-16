@@ -38,6 +38,7 @@ public class twodimensional {
     public static void main(String[] args) {
         System.out.println("Enter the number of rows and column:");
         //System.out.println("Enter the number of column:");
+        @SuppressWarnings("resource")
         Scanner sc=new Scanner(System.in);
         int rows=sc.nextInt();
         int cols=sc.nextInt();
