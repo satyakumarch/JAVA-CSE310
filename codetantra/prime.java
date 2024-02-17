@@ -1,7 +1,9 @@
 package codetantra;
 
+import java.util.Scanner;
+
 public class prime {
-    public void primenumber(int low,int high){
+    public void printNumber(int low,int high){
         for(int i=low;i<high;i++){
             if(isPrime(i)){
                 System.out.println(i+" ");
