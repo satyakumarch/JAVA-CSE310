@@ -6,6 +6,7 @@ public class numberdivisible{
         int n=sc.nextInt();
         if(n%5==0){
             System.out.println(n+ " is divisible by 5");
+            System.out.println("hello");
         }else{
             System.out.println(n+ " is not divisible by 5");
         }
