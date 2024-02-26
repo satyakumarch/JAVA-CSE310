@@ -18,7 +18,3 @@ public class D2array {
 }
 
 
-public class D2array {
-
-    
-}
