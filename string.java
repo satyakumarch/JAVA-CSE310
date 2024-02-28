@@ -53,20 +53,32 @@ import java.util.Scanner;
 // Enter your second name:kumar
 // your name is:satyakumar
 
-public class string{
+// public class string{
 
-    public class elementcheck{
-        public boolean checkelement(int[] arr,int arg){
-            boolean res=false;
-            for(int i=0;i<arr.length-1;i++){
-                if(arr[i]==arg || arr[i+1]==arg){
-                    res=true;
-                }else{
-                    res=false;
-                    break;
-                }
+//     public class elementcheck{
+//         public boolean checkelement(int[] arr,int arg){
+//             boolean res=false;
+//             for(int i=0;i<arr.length-1;i++){
+//                 if(arr[i]==arg || arr[i+1]==arg){
+//                     res=true;
+//                 }else{
+//                     res=false;
+//                     break;
+//                 }
+//             }
+//             result res;
+//         }
+//     }
+// }
+public class string{
+   public static void main(String[] args){
+    int arr[] ;
+    // public void checkelement(int [] arr)
+        for(int i=1;i<arr.length;i++){
+            if(arr[i]!=arr[i-1] && arr[i]!=arr[i+1]){
+                System.out.println(arr[i]);
             }
-            result res;
-        }
+        
     }
+   }
 }
