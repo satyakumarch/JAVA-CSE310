@@ -1,29 +1,65 @@
-// Write a class NumberRangeException which id inherited from Exception contains only a default costructor which will 
-// print message "Please enter a number between 25 and 50."
+// // Write a class NumberRangeException which id inherited from Exception contains only a default costructor which will 
+// // print message "Please enter a number between 25 and 50."
 
-// write a class MyException with the main() method which will receive only one argumment and convert that into int.
-// the given integer is between 25 and 50 print the given value otherwise the NumberRangeException()
+// // write a class MyException with the main() method which will receive only one argumment and convert that into int.
+// // the given integer is between 25 and 50 print the given value otherwise the NumberRangeException()
 
-public class MyExceptionjava{
-    public static void main(String[] args){
-        try{
-            int x=Integer.parseInt(args[0]);
-            if(x<25 || x>50){
-                throw new NumberRangeException("Please enter a number betweein 25 and 50");
-            }else{
-                System.out.println("Given number : "+x);
-            }
-        }
-        catch(NumberRangeException e){
-            System.out.println("Please enter a number between 25 and 50");
-            System.out.println(e);
-        }
+// public class MyExceptionjava{
+//     public static void main(String[] args){
+//         try{
+//             int x=Integer.parseInt(args[0]);
+//             if(x<25 || x>50){
+//                 throw new NumberRangeException("Please enter a number betweein 25 and 50");
+//             }else{
+//                 System.out.println("Given number : "+x);
+//             }
+//         }
+//         catch(NumberRangeException e){
+//             System.out.println("Please enter a number between 25 and 50");
+//             System.out.println(e);
+//         }
 
+//     }
+// }
+// class NumberRangeException extends MyExceptionjava{
+//     String mess;
+//     public NumberRangeException(String message){
+//         this.mess=message;
+//     }
+// }
+
+// Custom exception class inheriting from Exception
+class NumberRangeException extends MyExceptionjava {
+    // Constructor to initialize the exception with a specific message
+    public NumberRangeException(String message) {
+        super(message);
     }
 }
-class NumberRangeException extends MyExceptionjava{
-    String mess;
-    public NumberRangeException(String message){
-        this.mess=message;
+
+// Main class to handle the exception
+public class MyExceptionjava {
+    // Main method with command line arguments
+    public static void main(String[] args) {
+        try {
+            // Convert the argument to an integer
+            int x = Integer.parseInt(args[0]);
+            // Check if the number is within the specified range
+            if (x < 25 || x > 50) {
+                // Throw custom exception if number is out of range
+                throw new NumberRangeException("Please enter a number between 25 and 50.");
+            } else {
+                // Print the given number if it's within the range
+                System.out.println("Given number: " + x);
+            }
+        } catch (NumberRangeException e) {
+            // Print the exception message
+            System.out.println(e.getMessage());
+        } catch (NumberFormatException e) {
+            // Handle the case where the argument cannot be converted to an integer
+            System.out.println("Error: Please enter a valid integer.");
+        } catch (ArrayIndexOutOfBoundsException e) {
+            // Handle the case where no arguments are provided
+            System.out.println("Error: Please provide an integer argument.");
+        }
     }
 }
