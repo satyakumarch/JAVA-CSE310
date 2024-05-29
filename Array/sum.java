@@ -8,7 +8,7 @@ class arrayexample{
         System.out.println(sum);
     }
 }
-public class Main{
+public class sum{
     public static void main(String[] args){
         arrayexample obj=new arrayexample();
         obj.sumofarray();
