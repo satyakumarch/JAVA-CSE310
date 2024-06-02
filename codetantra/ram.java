@@ -6,7 +6,8 @@ public class ram{
         ram example =new ram();
         int n1=40;
         int n2=30;
-        int result=example.sum(n1,n2);
+        int n3=20;
+        int result=example.sum(n1,n2,n3);
         System.out.println("result "+result);
     }
     
