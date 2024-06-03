@@ -6,7 +6,7 @@ public class OddSum{
         System.out.println("Enter the number:");
         int num=Sc.nextInt();
         int sum=sumOdd(num);
-        System.out.println("sum of odd from till " +"num is :"+" = "+sum);
+        System.out.println("sum of odd from till "+num +" num is :"+" = "+sum);
 
     }
     public static int sumOdd(int num){
