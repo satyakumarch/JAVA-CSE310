@@ -2,26 +2,27 @@ import java.util.Scanner;
 
 public class SumAndAverage {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the total number of elements in the array:");
-        int n = sc.nextInt();
+        System.out.println("Welcome to array sum and average:");
+        int[] numArray=ArrayUtility.inputArray();
+        long sum=sum(numArray);
+        int avg=average(numArray);
+        System.out.println("sum of the number is :"+sum);
+        System.out.println("Average of the number is:"+avg);
 
-        int[] arr = new int[n];
-        System.out.println("Enter the array elements:");
-        for (int i = 0; i < n; i++) {
-            arr[i] = sc.nextInt();
-        }
 
-        double average = averageCalculate(arr, n);
-        System.out.println("The average of all the elements in the array is " + average);
     }
-
-    static double averageCalculate(int[] a, int n) {
-        int sum = 0;
-        for (int i = 0; i < n; i++) {
-            sum += a[i];
+    public static long sum(int[] numArray){
+        long sum=0;
+        int i=0;
+        while(i<numArray.length){
+            sum+=numArray[i];
+            i++;
         }
-        System.out.println("The total sum of all the elements in the array is " + sum);
-        return (double) sum / n;
+        return sum;
+    }
+    public static int average(int[] numArray){
+        long sum=sum(numArray);
+        return(int)(sum/numArray.length);
+
     }
 }
