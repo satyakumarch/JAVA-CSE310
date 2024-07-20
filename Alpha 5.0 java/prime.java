@@ -12,6 +12,14 @@ public class prime{
         }
         return true;
     }
+    public static void primeinRange(int n){
+        for(int i=2;i<=n;i++){
+            if(isPrime(i))//true;
+            System.out.print(i+" ");
+
+        }
+
+    }
     // public static boolean isPrime(int n){
     //     boolean isPrime=true;
     //     for(int i=2;i<=n-1;i++){
@@ -22,7 +30,10 @@ public class prime{
     //     return true;
     // }
     public static void main(String[] args){
-        System.out.println(isPrime(3));
+        // System.out.println(isPrime(3));
+        // System.out.println(primeinRange(20));
+        primeinRange(30);
+
 
     }
 }
