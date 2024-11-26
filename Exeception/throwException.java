@@ -1,7 +1,7 @@
 public class throwException{
     static void avg(){
         try{
-            throw new ArithmeticException("Demo");
+            throw new ArithmeticException("demo exception is occurred");
 
         }
         catch(ArithmeticException e)
