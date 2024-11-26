@@ -51,9 +51,13 @@ The repository has seen regular updates, with the latest commits addressing vari
 Notable Commits Include:
 
 Merge Requests: 🔄 Collaboration and integration of new features or fixes.
+
 Code Updates: ✍️ Improvements and optimizations to existing Java code.
+
 Community Engagement
+
 The repository has garnered interest with 3 stars and 1 watcher, indicating a growing community of developers who find the content valuable. Users are encouraged to contribute by submitting pull requests or suggesting improvements.
 
 Conclusion
+
 This repository serves as a valuable resource for both beginners and experienced Java developers, providing practical examples and fostering a collaborative environment for learning and sharing knowledge about Java programming.
