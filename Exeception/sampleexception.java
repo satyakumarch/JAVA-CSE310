@@ -13,7 +13,7 @@ public class sampleexception{
             System.out.println("String result is :"+num);
         }
         catch(NumberFormatException e){
-            System.out.println("numberformatexception occured");
+            System.out.println("numberformatexception  occurred");
         }
         try{
             int a[]=new int[5];
