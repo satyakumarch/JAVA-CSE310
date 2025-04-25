@@ -11,11 +11,6 @@ public class Abstract{
 
         Mustang myhorse=new Mustang();
 
-
-
-
-        
-
     }
 
 }
