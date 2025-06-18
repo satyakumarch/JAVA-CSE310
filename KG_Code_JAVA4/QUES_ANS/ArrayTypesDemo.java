@@ -24,8 +24,8 @@ public class ArrayTypesDemo {
 
         // 3. Jagged array (array of arrays with different lengths)
         int[][] jaggedArray = {
-            {1, 2},
-            {3, 4, 5},
+            {1, 4},
+            {3, 9, 5},
             {6}
         };
         System.out.println("Jagged array:");
